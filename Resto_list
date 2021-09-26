@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-26T10:44:44.114Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="xoXJw-MF_Rz_-tu2Ffgw" version="15.3.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-26T10:46:28.387Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="4Rw6S0fJAs3EL4vxK6nE" version="15.3.3" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="862" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -236,7 +236,7 @@
         <mxCell id="mbZ_sZhnofYWG0I8EfIS-56" value="+ Name&#xa;+ Account NO Primary_Key&#xa;+ branch &#xa;+ IFSC&#xa;+ owner_id FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="mbZ_sZhnofYWG0I8EfIS-55">
           <mxGeometry y="30" width="160" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="mbZ_sZhnofYWG0I8EfIS-57" value="GST_PAN" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;hachureGap=4;pointerEvents=0;sketch=0;fontColor=#5C5C5C;fillColor=#21C0A5;" vertex="1" parent="1">
+        <mxCell id="mbZ_sZhnofYWG0I8EfIS-57" value="GST_PAN_Info" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;hachureGap=4;pointerEvents=0;sketch=0;fontColor=#5C5C5C;fillColor=#21C0A5;" vertex="1" parent="1">
           <mxGeometry x="365" y="240" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="mbZ_sZhnofYWG0I8EfIS-58" value="+ Registeration No&#xa;+ gst image&#xa;+ pan card&#xa;+ pan_image&#xa;+  owner_id FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="mbZ_sZhnofYWG0I8EfIS-57">
