@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" data-theme="light">
+{% load static %}
 
 <head>
     <meta charset="utf-8" />
@@ -15,34 +16,36 @@
     <meta name="apple-mobile-web-app-title" content="Arion Admin Dashboard" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/apexcharts.css" />
-    <link rel="stylesheet" href="css/tippy/tippy.css" />
-    <link rel="stylesheet" href="css/flatpickr.min.css" />
-    <link rel="stylesheet" href="css/select2.min.css" />
-    <link rel="stylesheet" href="css/quill/quill.snow.css" />
-    <link rel="stylesheet" href="css/quill/quill.core.css" />
-    <link rel="stylesheet" href="css/filepond.min.css" />
-    <link rel="stylesheet" href="css/filepond-plugin-image-preview.min.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/content/favicons/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="img/content/favicons/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/content/favicons/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="img/content/favicons/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/content/favicons/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="img/content/favicons/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="img/content/favicons/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="img/content/favicons/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/content/favicons/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="img/content/favicons/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/content/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="img/content/favicons/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/content/favicons/favicon-16x16.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="manifest" href="img/content/favicons/manifest.json" />-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/apexcharts.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/tippy/tippy.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flatpickr.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/select2.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/quill/quill.snow.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/quill/quill.core.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/filepond.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/filepond-plugin-image-preview.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/content/favicons/apple-icon-57x57.png' %}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/content/favicons/apple-icon-60x60.png' %}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/content/favicons/apple-icon-72x72.png' %}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/content/favicons/apple-icon-76x76.png' %}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/content/favicons/apple-icon-114x114.png' %}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/content/favicons/apple-icon-120x120.png' %}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/content/favicons/apple-icon-144x144.png' %}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/content/favicons/apple-icon-152x152.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/content/favicons/apple-icon-180x180.png' %}" />
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{% static 'img/content/favicons/android-icon-192x192.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/content/favicons/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/content/favicons/favicon-96x96.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/content/favicons/favicon-16x16.png' %}" />
+    <link rel="stylesheet"
+        href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+    <!-- <link rel="manifest" href="{% static 'img/content/favicons/manifest.json" />-->
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png' %}" />
     <meta name="theme-color" content="#ffffff" />
 </head>
 
@@ -473,12 +476,12 @@
                             <div class="header__left-toggle">
                                 <button class="header__toggle-menu toggle-sidebar" type="button">
                                     <svg class="icon-icon-menu">
-                                        <use xlink:href="#icon-menu"></use>
+                                        <use xlink:href="{% static #icon-menu"></use>
                                     </svg>
                                 </button>
                                 <button class="header__toggle-search toggle-search">
                                     <svg class="icon-icon-search">
-                                        <use xlink:href="#icon-search"></use>
+                                        <use xlink:href="{% static #icon-search"></use>
                                     </svg>
                                 </button>
                             </div>
@@ -486,7 +489,7 @@
                                 <form class="form-search" action="#" method="GET">
                                     <div class="form-search__container"><span class="form-search__icon-left">
                                             <svg class="icon-icon-search">
-                                                <use xlink:href="#icon-search"></use>
+                                                <use xlink:href="{% static #icon-search"></use>
                                             </svg></span>
                                         <input class="form-search__input" type="text" placeholder="Search..." />
                                     </div>
@@ -499,11 +502,11 @@
                         <div class="header__col-right col d-flex align-items-center">
                             <div class="header__tools">
                                 <div class="header__notes header__tools-item">
-                                    <a class="header__tools-toggle header__tools-toggle--message" href="#"
+                                    <a class="header__tools-toggle header__tools-toggle--message" href="{% static #"
                                         data-tippy-content="Messages" data-tippy-placement="bottom"
                                         data-toggle="dropdown">
                                         <svg class="icon-icon-message">
-                                            <use xlink:href="#icon-message"></use>
+                                            <use xlink:href="{% static #icon-message"></use>
                                         </svg> <span class="badge-signal"></span>
                                     </a>
 
@@ -511,21 +514,22 @@
                                         <div class="dropdown-menu__top dropdown-menu__item"><span
                                                 class="dropdown-menu__title">Messages</span><span
                                                 class="badge badge--red">7</span><a class="dropdown-menu__clear-all"
-                                                href="#" role="button">Clear All</a>
+                                                href="{% static #" role="button">Clear All</a>
                                         </div>
                                         <div class="dropdown-menu__items scrollbar-thin scrollbar-visible"
                                             data-simplebar="data-simplebar">
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-teal">
                                                             <div class="dropdown-menu__item-icon-text">MA</div>
-                                                            <img src="img/content/item-4.jpg" alt="#" />
+                                                            <'img src="'img/content/item-4.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal badge-signal--green"></div>
                                                     </div>
@@ -539,16 +543,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-orange-dark">
                                                             <div class="dropdown-menu__item-icon-text">JT</div>
-                                                            <img src="img/content/humans/item-1.jpg" alt="#" />
+                                                            <'img src="'img/content/humans/item-1.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal badge-signal--green"></div>
                                                     </div>
@@ -562,16 +567,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-orange">
                                                             <div class="dropdown-menu__item-icon-text">SA</div>
-                                                            <img src="img/content/humans/item-5.jpg" alt="#" />
+                                                            <'img src="'img/content/humans/item-5.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal"></div>
                                                     </div>
@@ -585,16 +591,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-red">
                                                             <div class="dropdown-menu__item-icon-text">WS</div>
-                                                            <img src="img/content/humans/item-6.jpg" alt="#" />
+                                                            <'img src="'img/content/humans/item-6.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal badge-signal--red"></div>
                                                     </div>
@@ -608,16 +615,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-blue">
                                                             <div class="dropdown-menu__item-icon-text">SA</div>
-                                                            <img src="img/content/humans/item-5.jpg" alt="#" />
+                                                            <'img src="'img/content/humans/item-5.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal badge-signal--green"></div>
                                                     </div>
@@ -631,16 +639,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-green">
                                                             <div class="dropdown-menu__item-icon-text">JH</div>
-                                                            <img src="img/content/humans/item-7.jpg" alt="#" />
+                                                            <'img src="'img/content/humans/item-7.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal"></div>
                                                     </div>
@@ -654,16 +663,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__message" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__message"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-orange">
                                                             <div class="dropdown-menu__item-icon-text">RH</div>
-                                                            <img src="img/content/humans/item-8.jpg" alt="#" />
+                                                            <'img src="'img/content/humans/item-8.jpg" alt="#" />
                                                         </div>
                                                         <div class="badge-signal badge-signal--red"></div>
                                                     </div>
@@ -678,19 +688,20 @@
                                             </div>
                                         </div>
                                         <div class="dropdown-menu__divider"></div><a
-                                            class="dropdown-menu__item dropdown-menu__link-all" href="#">View all
+                                            class="dropdown-menu__item dropdown-menu__link-all" href="{% static #">View
+                                            all
                                             Messages
                                             <svg class="icon-icon-keyboard-right">
-                                                <use xlink:href="#icon-keyboard-right"></use>
+                                                <use xlink:href="{% static #icon-keyboard-right"></use>
                                             </svg></a>
                                     </div>
                                 </div>
                                 <div class="header__messages header__tools-item">
-                                    <a class="header__tools-toggle header__tools-toggle--bell" href="#"
+                                    <a class="header__tools-toggle header__tools-toggle--bell" href="{% static #"
                                         data-tippy-content="Notifications" data-tippy-placement="bottom"
                                         data-toggle="dropdown">
                                         <svg class="icon-icon-bell">
-                                            <use xlink:href="#icon-bell"></use>
+                                            <use xlink:href="{% static #icon-bell"></use>
                                         </svg> <span class="badge-signal"></span>
                                     </a>
 
@@ -698,21 +709,22 @@
                                         <div class="dropdown-menu__top dropdown-menu__item"><span
                                                 class="dropdown-menu__title">Notifications</span><span
                                                 class="badge badge--red">5</span><a class="dropdown-menu__clear-all"
-                                                href="#" role="button">Clear All</a>
+                                                href="{% static #" role="button">Clear All</a>
                                         </div>
                                         <div class="dropdown-menu__items scrollbar-thin scrollbar-visible"
                                             data-simplebar="data-simplebar">
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__note" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__note"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-green">
                                                             <svg class="icon-icon-cart">
-                                                                <use xlink:href="#icon-cart"></use>
+                                                                <use xlink:href="{% static #icon-cart"></use>
                                                             </svg>
                                                         </div>
                                                     </div>
@@ -723,16 +735,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__note" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__note"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-orange">
                                                             <svg class="icon-icon-bill">
-                                                                <use xlink:href="#icon-bill"></use>
+                                                                <use xlink:href="{% static #icon-bill"></use>
                                                             </svg>
                                                         </div>
                                                     </div>
@@ -743,16 +756,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__note" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__note"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-teal">
                                                             <svg class="icon-icon-truck">
-                                                                <use xlink:href="#icon-truck"></use>
+                                                                <use xlink:href="{% static #icon-truck"></use>
                                                             </svg>
                                                         </div>
                                                     </div>
@@ -763,16 +777,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__note" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__note"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-green">
                                                             <svg class="icon-icon-cart">
-                                                                <use xlink:href="#icon-cart"></use>
+                                                                <use xlink:href="{% static #icon-cart"></use>
                                                             </svg>
                                                         </div>
                                                     </div>
@@ -783,16 +798,17 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-menu__item">
-                                                <a class="dropdown-menu__item-remove" href="#">
+                                                <a class="dropdown-menu__item-remove" href="{% static #">
                                                     <svg class="icon-icon-cross">
-                                                        <use xlink:href="#icon-cross"></use>
+                                                        <use xlink:href="{% static #icon-cross"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="dropdown-menu__item-block dropdown-menu__note" href="#">
+                                                <a class="dropdown-menu__item-block dropdown-menu__note"
+                                                    href="{% static #">
                                                     <div class="dropdown-menu__item-left">
                                                         <div class="dropdown-menu__item-icon color-orange">
                                                             <svg class="icon-icon-bill">
-                                                                <use xlink:href="#icon-bill"></use>
+                                                                <use xlink:href="{% static #icon-bill"></use>
                                                             </svg>
                                                         </div>
                                                     </div>
@@ -804,52 +820,54 @@
                                             </div>
                                         </div>
                                         <div class="dropdown-menu__divider"></div><a
-                                            class="dropdown-menu__item dropdown-menu__link-all" href="#">View all
+                                            class="dropdown-menu__item dropdown-menu__link-all" href="{% static #">View
+                                            all
                                             Notifications
                                             <svg class="icon-icon-keyboard-right">
-                                                <use xlink:href="#icon-keyboard-right"></use>
+                                                <use xlink:href="{% static #icon-keyboard-right"></use>
                                             </svg></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="header__profile dropdown">
-                                <a class="header__profile-toggle dropdown__toggle" href="#" data-toggle="dropdown">
+                                <a class="header__profile-toggle dropdown__toggle" href="{% static #"
+                                    data-toggle="dropdown">
                                     <div class="header__profile-image"><span
                                             class="header__profile-image-text">MA</span>
-                                        <img src="img/content/item-4.jpg" alt="#" />
+                                        <'img src="'img/content/item-4.jpg" alt="#" />
                                     </div>
                                     <div class="header__profile-text"><span>Mark Anderson</span>
                                     </div><span class="icon-arrow-down">
                                         <svg class="icon-icon-arrow-down">
-                                            <use xlink:href="#icon-arrow-down"></use>
+                                            <use xlink:href="{% static #icon-arrow-down"></use>
                                         </svg></span>
                                 </a>
                                 <div class="profile-dropdown dropdown-menu dropdown-menu--right"><a
-                                        class="profile-dropdown__item dropdown-menu__item" href="#" tabindex="0"><span
-                                            class="profile-dropdown__icon">
+                                        class="profile-dropdown__item dropdown-menu__item" href="{% static #"
+                                        tabindex="0"><span class="profile-dropdown__icon">
                                             <svg class="icon-icon-user">
-                                                <use xlink:href="#icon-user"></use>
+                                                <use xlink:href="{% static #icon-user"></use>
                                             </svg></span><span>My Profile</span></a><a
-                                        class="profile-dropdown__item dropdown-menu__item" href="#" tabindex="0"><span
-                                            class="profile-dropdown__icon">
+                                        class="profile-dropdown__item dropdown-menu__item" href="{% static #"
+                                        tabindex="0"><span class="profile-dropdown__icon">
                                             <svg class="icon-icon-chat">
-                                                <use xlink:href="#icon-chat"></use>
+                                                <use xlink:href="{% static #icon-chat"></use>
                                             </svg></span><span>My chat</span></a><a
-                                        class="profile-dropdown__item dropdown-menu__item" href="#" tabindex="0"><span
-                                            class="profile-dropdown__icon">
+                                        class="profile-dropdown__item dropdown-menu__item" href="{% static #"
+                                        tabindex="0"><span class="profile-dropdown__icon">
                                             <svg class="icon-icon-task">
-                                                <use xlink:href="#icon-task"></use>
+                                                <use xlink:href="{% static #icon-task"></use>
                                             </svg></span><span>Tasks</span></a><a
-                                        class="profile-dropdown__item dropdown-menu__item" href="#" tabindex="0"><span
-                                            class="profile-dropdown__icon">
+                                        class="profile-dropdown__item dropdown-menu__item" href="{% static #"
+                                        tabindex="0"><span class="profile-dropdown__icon">
                                             <svg class="icon-icon-settings">
-                                                <use xlink:href="#icon-settings"></use>
+                                                <use xlink:href="{% static #icon-settings"></use>
                                             </svg></span><span>Settings</span></a>
                                     <div class="dropdown-menu__divider"></div><a
-                                        class="profile-dropdown__item dropdown-menu__item" href="#" tabindex="0"><span
-                                            class="profile-dropdown__icon">
+                                        class="profile-dropdown__item dropdown-menu__item" href="{% static #"
+                                        tabindex="0"><span class="profile-dropdown__icon">
                                             <svg class="icon-icon-logout">
-                                                <use xlink:href="#icon-logout"></use>
+                                                <use xlink:href="{% static #icon-logout"></use>
                                             </svg></span><span>Logout</span></a>
                                 </div>
                             </div>
@@ -863,8 +881,9 @@
             <div class="sidebar__container">
                 <div class="sidebar__top">
                     <div class="container container--sm">
-                        <a class="sidebar__logo" href="index.html">
-                            <img class="sidebar__logo-icon" src="img/content/logo-black-.png" alt="#" width="44" />
+                        <a class="sidebar__logo" href="{% static index.html">
+                            <'img class="sidebar__logo-icon" src="'img/content/logo-black-.png' %}" alt="#"
+                                width="44" />
                             <div class="sidebar__logo-text">FOODICA</div>
                         </a>
                     </div>
@@ -872,45 +891,45 @@
                 <div class="sidebar__content" data-simplebar="data-simplebar">
                     <nav class="sidebar__nav">
                         <ul class="sidebar__menu">
-                            <li class="sidebar__menu-item"><a class="sidebar__link active" href="index.html"
+                            <li class="sidebar__menu-item"><a class="sidebar__link active" href="{% static index.html"
                                     aria-expanded="true">
                                     <span class="sidebar__link-text">DASHBOARD</span>
                                 </a>
                             </li>
 
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="restaurant list.html"
-                                    aria-expanded="true">
+                            <li class="sidebar__menu-item"><a class="sidebar__link"
+                                    href="{% static restaurant list.html" aria-expanded="true">
                                     <span class="sidebar__link-text">RESTAURANT LIST</span>
                                 </a>
                             </li>
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                            <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                     data-toggle="collapse" data-target="#Product" aria-expanded="false">
                                     <span class="sidebar__link-text">PRODUCT SECTION</span><span
                                         class="sidebar__link-arrow">
                                         <svg class="icon-icon-keyboard-down">
-                                            <use xlink:href="#icon-keyboard-down"></use>
+                                            <use xlink:href="{% static #icon-keyboard-down"></use>
                                         </svg></span>
                                 </a>
                                 <div class="collapse" id="Product">
                                     <ul class="sidebar__collapse-menu">
 
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                                 data-toggle="collapse" data-target="#Product2"
                                                 aria-expanded="false"><span
                                                     class="sidebar__link-text sub_drop">PRODUCTS</span><span
                                                     class="sidebar__link-arrow">
                                                     <svg class="icon-icon-keyboard-down">
-                                                        <use xlink:href="#icon-keyboard-down"></use>
+                                                        <use xlink:href="{% static #icon-keyboard-down"></use>
                                                     </svg></span></a>
                                             <div class="collapse" id="Product2">
                                                 <ul class="sidebar__collapse-menu">
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="products.html"><span
+                                                            href="{% static products.html"><span
                                                                 class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Products List</span></a>
                                                     </li>
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="addproduct.html"><span
+                                                            href="{% static addproduct.html"><span
                                                                 class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Add Product</span></a>
                                                     </li>
@@ -919,22 +938,24 @@
                                             </div>
                                         </li>
 
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                                 data-toggle="collapse" data-target="#Product3"
                                                 aria-expanded="false"><span
                                                     class="sidebar__link-text sub_drop">MENU</span><span
                                                     class="sidebar__link-arrow">
                                                     <svg class="icon-icon-keyboard-down">
-                                                        <use xlink:href="#icon-keyboard-down"></use>
+                                                        <use xlink:href="{% static #icon-keyboard-down"></use>
                                                     </svg></span></a>
                                             <div class="collapse" id="Product3">
                                                 <ul class="sidebar__collapse-menu">
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="menu_list.html"><span class="sidebar__link-signal"></span><span
+                                                            href="{% static menu_list.html"><span
+                                                                class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Menu List</span></a>
                                                     </li>
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="#"><span class="sidebar__link-signal"></span><span
+                                                            href="{% static #"><span
+                                                                class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Menu Grid</span></a>
                                                     </li>
 
@@ -942,22 +963,23 @@
                                             </div>
                                         </li>
 
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                                 data-toggle="collapse" data-target="#Product4"
                                                 aria-expanded="false"><span
                                                     class="sidebar__link-text sub_drop">OFFERS</span><span
                                                     class="sidebar__link-arrow">
                                                     <svg class="icon-icon-keyboard-down">
-                                                        <use xlink:href="#icon-keyboard-down"></use>
+                                                        <use xlink:href="{% static #icon-keyboard-down"></use>
                                                     </svg></span></a>
                                             <div class="collapse" id="Product4">
                                                 <ul class="sidebar__collapse-menu">
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="offers_list.html"><span class="sidebar__link-signal"></span><span
+                                                            href="{% static offers_list.html"><span
+                                                                class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Offers List</span></a>
                                                     </li>
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="add_offer.html"><span
+                                                            href="{% static add_offer.html"><span
                                                                 class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Add Offer</span></a>
                                                     </li>
@@ -965,23 +987,23 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                                 data-toggle="collapse" data-target="#Product5" aria-expanded="false">
                                                 <span class="sidebar__link-text sub_drop">COUPONS</span><span
                                                     class="sidebar__link-arrow">
                                                     <svg class="icon-icon-keyboard-down">
-                                                        <use xlink:href="#icon-keyboard-down"></use>
+                                                        <use xlink:href="{% static #icon-keyboard-down"></use>
                                                     </svg></span>
                                             </a>
                                             <div class="collapse" id="Product5">
                                                 <ul class="sidebar__collapse-menu">
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="#"><span
+                                                            href="{% static #"><span
                                                                 class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Coupons List</span></a>
                                                     </li>
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="add_coupon.html"><span
+                                                            href="{% static add_coupon.html"><span
                                                                 class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Add Coupon</span></a>
                                                     </li>
@@ -989,21 +1011,22 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                                 data-toggle="collapse" data-target="#Product6" aria-expanded="false">
                                                 <span class="sidebar__link-text sub_drop">BANNER</span><span
                                                     class="sidebar__link-arrow">
                                                     <svg class="icon-icon-keyboard-down">
-                                                        <use xlink:href="#icon-keyboard-down"></use>
+                                                        <use xlink:href="{% static #icon-keyboard-down"></use>
                                                     </svg></span></a>
                                             <div class="collapse" id="Product6">
                                                 <ul class="sidebar__collapse-menu">
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="#"><span class="sidebar__link-signal"></span><span
+                                                            href="{% static #"><span
+                                                                class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Banners List</span></a>
                                                     </li>
                                                     <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                            href="banners.html"><span
+                                                            href="{% static banners.html"><span
                                                                 class="sidebar__link-signal"></span><span
                                                                 class="sidebar__link-text">Add Banner</span></a>
                                                     </li>
@@ -1016,40 +1039,43 @@
                                 </div>
                             </li>
 
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                            <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                     data-toggle="collapse" data-target="#order" aria-expanded="false">
                                     <span class="sidebar__link-text">ORDER SECTION</span><span
                                         class="sidebar__link-arrow">
                                         <svg class="icon-icon-keyboard-down">
-                                            <use xlink:href="#icon-keyboard-down"></use>
+                                            <use xlink:href="{% static #icon-keyboard-down"></use>
                                         </svg></span>
                                 </a>
                                 <div class="collapse" id="order">
                                     <ul class="sidebar__collapse-menu">
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="orders.html"><span
+                                        <li class="sidebar__menu-item"><a class="sidebar__link"
+                                                href="{% static orders.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">All Orders</span></a>
                                         </li>
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="complete_order.html"><span
+                                        <li class="sidebar__menu-item"><a class="sidebar__link"
+                                                href="{% static complete_order.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Complete</span></a>
                                         </li>
                                         <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                href="failed_orders.html"><span
+                                                href="{% static failed_orders.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Failed</span></a>
                                         </li>
                                         <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                href="cancel_orders.html"><span
+                                                href="{% static cancel_orders.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Canceled</span></a>
                                         </li>
                                         <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                href="refund_orders.html"><span class="sidebar__link-signal"></span><span
+                                                href="{% static refund_orders.html"><span
+                                                    class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Refunded</span></a>
                                         </li>
                                         <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                href="order-messages.html"><span
+                                                href="{% static order-messages.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Order Messages</span></a>
                                         </li>
@@ -1057,20 +1083,21 @@
                                 </div>
                             </li>
 
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                            <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                     data-toggle="collapse" data-target="#cust" aria-expanded="false">
                                     <span class="sidebar__link-text">CUSTOMER SECTION</span><span
                                         class="sidebar__link-arrow">
                                         <svg class="icon-icon-keyboard-down">
-                                            <use xlink:href="#icon-keyboard-down"></use>
+                                            <use xlink:href="{% static #icon-keyboard-down"></use>
                                         </svg></span></a>
                                 <div class="collapse" id="cust">
                                     <ul class="sidebar__collapse-menu">
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="customer-list.html"><span
+                                        <li class="sidebar__menu-item"><a class="sidebar__link"
+                                                href="{% static customer-list.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">List</span></a>
                                         </li>
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="#"><span
+                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Reviews</span></a>
                                         </li>
@@ -1079,33 +1106,36 @@
                                 </div>
                             </li>
 
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="#"
+                            <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
                                     data-toggle="collapse" data-target="#delivery_boy" aria-expanded="false">
                                     <span class="sidebar__link-text">JINN SECTION</span><span
                                         class="sidebar__link-arrow">
                                         <svg class="icon-icon-keyboard-down">
-                                            <use xlink:href="#icon-keyboard-down"></use>
+                                            <use xlink:href="{% static #icon-keyboard-down"></use>
                                         </svg></span></a>
                                 <div class="collapse" id="delivery_boy">
                                     <ul class="sidebar__collapse-menu">
-                                        <li class="sidebar__menu-item"><a class="sidebar__link" href="deliveryman.html"><span
+                                        <li class="sidebar__menu-item"><a class="sidebar__link"
+                                                href="{% static deliveryman.html"><span
                                                     class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">List</span></a>
                                         </li>
                                         <li class="sidebar__menu-item"><a class="sidebar__link"
-                                                href="jinn_reviews.html"><span class="sidebar__link-signal"></span><span
+                                                href="{% static jinn_reviews.html"><span
+                                                    class="sidebar__link-signal"></span><span
                                                     class="sidebar__link-text">Reviews</span></a>
                                         </li>
 
                                     </ul>
                                 </div>
                             </li>
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="mail.html"
+                            <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static mail.html"
                                     aria-expanded="false">
                                     <span class="sidebar__link-text">MAIL</span><span class="badge badge--red">20</span>
                                 </a>
                             </li>
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="#" aria-expanded="true">
+                            <li class="sidebar__menu-item"><a class="sidebar__link" href="{% static #"
+                                    aria-expanded="true">
                                     <span class="sidebar__link-text">SETTINGS</span>
                                 </a>
                             </li>
@@ -1125,17 +1155,17 @@
                             <div class="breadcrumbs__container">
                                 <ol class="breadcrumbs__list">
                                     <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link" href="index.html">
+                                        <a class="breadcrumbs__link" href="{% static index.html">
                                             <svg class="icon-icon-home breadcrumbs__icon">
-                                                <use xlink:href="#icon-home"></use>
+                                                <use xlink:href="{% static #icon-home"></use>
                                             </svg>
                                             <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
-                                                <use xlink:href="#icon-keyboard-right"></use>
+                                                <use xlink:href="{% static #icon-keyboard-right"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="breadcrumbs__item disabled"><a class="breadcrumbs__link"
-                                            href="#"><span>Restaurant List</span>
+                                            href="{% static #"><span>Restaurant List</span>
                                             <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
                                             </svg></a>
                                     </li>
@@ -1222,7 +1252,7 @@
                                 <div class="col-auto">
                                     <button class="button-add button-add--blue" data-modal="#addProduct"><span
                                             class="button-add__icon">
-                                            <a href="https://foodica.techmihirnaik.in/restaurantpartner"><svg
+                                            <a href="{% static 'https://foodica.techmihirnaik.in/restaurantpartner' %}"><svg
                                                     class="icon-icon-plus">
                                                     <use xlink:href="#icon-plus"></use>
                                                 </svg></a></span><span class="button-add__text"></span>
@@ -1327,7 +1357,8 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="#icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
@@ -1357,7 +1388,7 @@
                                                 <input type="checkbox" data-checkbox="product"><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1383,7 +1414,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right">
@@ -1393,28 +1424,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1430,7 +1462,7 @@
                                                 <input type="checkbox" data-checkbox="product" checked><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1456,7 +1488,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right">
@@ -1466,28 +1498,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1503,7 +1536,7 @@
                                                 <input type="checkbox" data-checkbox="product" checked><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1529,7 +1562,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right">
@@ -1539,28 +1572,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1576,7 +1610,7 @@
                                                 <input type="checkbox" data-checkbox="product" checked><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1602,7 +1636,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right">
@@ -1612,28 +1646,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1649,7 +1684,7 @@
                                                 <input type="checkbox" data-checkbox="product" checked><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1675,7 +1710,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right">
@@ -1685,28 +1720,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1722,7 +1758,7 @@
                                                 <input type="checkbox" data-checkbox="product" checked><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1748,7 +1784,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right dropdown-items--up">
@@ -1758,28 +1794,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1795,7 +1832,7 @@
                                                 <input type="checkbox" data-checkbox="product"><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1821,7 +1858,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right dropdown-items--up">
@@ -1831,28 +1868,29 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-trash">
-                                                                        <use xlink:href="#icon-trash"></use>
+                                                                        <use xlink:href="{% static #icon-trash"></use>
                                                                     </svg></span>Delete</a>
                                                         </li>
                                                     </ul>
@@ -1868,7 +1906,7 @@
                                                 <input type="checkbox" data-checkbox="product"><span
                                                     class="checkbox__marker"><span class="checkbox__marker-icon">
                                                         <svg class="icon-icon-checked">
-                                                            <use xlink:href="#icon-checked"></use>
+                                                            <use xlink:href="{% static #icon-checked"></use>
                                                         </svg></span></span>
                                             </label>
                                         </div>
@@ -1894,7 +1932,7 @@
                                         <div class="items-more">
                                             <button class="items-more__button">
                                                 <svg class="icon-icon-more">
-                                                    <use xlink:href="#icon-more"></use>
+                                                    <use xlink:href="{% static #icon-more"></use>
                                                 </svg>
                                             </button>
                                             <div class="dropdown-items dropdown-items--right dropdown-items--up">
@@ -1904,21 +1942,22 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-view">
-                                                                        <use xlink:href="#icon-view"></use>
+                                                                        <use xlink:href="{% static #icon-view"></use>
                                                                     </svg></span>Details</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="{% static #icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-archive">
-                                                                        <use xlink:href="#icon-archive"></use>
+                                                                        <use xlink:href="{% static #icon-archive"></use>
                                                                     </svg></span>Archive</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
@@ -1984,7 +2023,8 @@
                                                                 class="dropdown-items__link"><span
                                                                     class="dropdown-items__link-icon">
                                                                     <svg class="icon-icon-duplicate">
-                                                                        <use xlink:href="#icon-duplicate"></use>
+                                                                        <use xlink:href="#icon-duplicate">
+                                                                        </use>
                                                                     </svg></span>Duplicate</a>
                                                         </li>
                                                         <li class="dropdown-items__item"><a
@@ -2049,38 +2089,38 @@
             </div>
         </main>
     </div>
- 
-    <script src="js/gsap/gsap.min.js"></script>
-    <script src="js/gsap/ScrollToPlugin.min.js"></script>
-    <script src="js/gsap/ScrollTrigger.min.js"></script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="js/vendor/simplebar.min.js"></script>
-    <script src="js/vendor/tippy-bundle.umd.min.js"></script>
-    <script src="js/vendor/grid/masonry.pkgd.min.js"></script>
-    <script src="js/vendor/grid/isotope.pkgd.min.js"></script>
-    <script src="js/vendor/charts/circle-progress.min.js"></script>
-    <script src="js/vendor/charts/echarts.common.min.js"></script>
-    <script src="js/vendor/charts/apexcharts/apexcharts.min.js"></script>
-    <script src="js/vendor/cleave/cleave.min.js"></script>
-    <script src="js/vendor/cleave/addons/cleave-phone.us.js"></script>
-    <script src="js/vendor/jqvmap/jquery.vmap.min.js"></script>
-    <script src="js/vendor/jqvmap/jquery.vmap.world.js"></script>
-    <script src="js/vendor/jqvmap/jquery.vmap.sampledata.js"></script>
-    <script src="js/vendor/jquery.star-rating-svg.min.js"></script>
-    <script src="js/vendor/calendar/flatpickr/flatpickr.min.js"></script>
-    <script src="js/vendor/calendar/flatpickr/en.js"></script>
-    <script src="js/vendor/select2.min.js"></script>
-    <script src="js/vendor/editors/quill.min.js"></script>
-    <script src="js/vendor/filepond/filepond-plugin-image-preview.min.js"></script>
-    <script src="js/vendor/filepond/filepond.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
-    <script src="js/vendor/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="js/vendor/scrollmagic/debug.addIndicators.min.js"></script>
-    <script src="js/components.js"></script>
-    <script src="js/common.js"></script>
+
+    <script src="{% static 'js/gsap/gsap.min.js' %}"></script>
+    <script src="{% static 'js/gsap/ScrollToPlugin.min.js' %}"></script>
+    <script src="{% static 'js/gsap/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/vendor/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/vendor/simplebar.min.js' %}"></script>
+    <script src="{% static 'js/vendor/tippy-bundle.umd.min.js' %}"></script>
+    <script src="{% static 'js/vendor/grid/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/vendor/grid/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/vendor/charts/circle-progress.min.js' %}"></script>
+    <script src="{% static 'js/vendor/charts/echarts.common.min.js' %}"></script>
+    <script src="{% static 'js/vendor/charts/apexcharts/apexcharts.min.js' %}"></script>
+    <script src="{% static 'js/vendor/cleave/cleave.min.js' %}"></script>
+    <script src="{% static 'js/vendor/cleave/addons/cleave-phone.us.js' %}"></script>
+    <script src="{% static 'js/vendor/jqvmap/jquery.vmap.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jqvmap/jquery.vmap.world.js' %}"></script>
+    <script src="{% static 'js/vendor/jqvmap/jquery.vmap.sampledata.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.star-rating-svg.min.js' %}"></script>
+    <script src="{% static 'js/vendor/calendar/flatpickr/flatpickr.min.js' %}"></script>
+    <script src="{% static 'js/vendor/calendar/flatpickr/en.js' %}"></script>
+    <script src="{% static 'js/vendor/select2.min.js' %}"></script>
+    <script src="{% static 'js/vendor/editors/quill.min.js' %}"></script>
+    <script src="{% static 'js/vendor/filepond/filepond-plugin-image-preview.min.js' %}"></script>
+    <script src="{% static 'js/vendor/filepond/filepond.min.js' %}"></script>
+    <script src="{% static 'js/vendor/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/vendor/scrollmagic/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'js/vendor/scrollmagic/debug.addIndicators.min.js' %}"></script>
+    <script src="{% static 'js/components.js' %}"></script>
+    <script src="{% static 'js/common.js' %}"></script>
 </body>
 
 </html>
