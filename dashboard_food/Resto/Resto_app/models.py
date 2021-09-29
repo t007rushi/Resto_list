@@ -1,22 +1,23 @@
 from django.db import models
-from django.db.models.deletion import CASCADE
-from django.db.models.expressions import OrderBy
-from django.db.models.fields import AutoField
-from django.db.models.fields.related import ForeignKey
+# from django.db.models.deletion import CASCADE
+# from django.db.models.expressions import OrderBy
+# from django.db.models.fields import AutoField
+# from django.db.models.fields.related import ForeignKey
 
 # Create your models here.
 
 # PK 1
 
 
-class Resto_list(models.Model, OrderBy=id):
-    id = models.IntegerField(primary_key=True, AutoField=True)
+class Resto_list(models.Model):
     Name = models.CharField(max_length=100)
-    Review = models.IntegerField(default=1)
+    Review = models.IntegerField()
     sale = models.IntegerField()
     date = models.DateField()
     status = models.CharField(max_length=10)
 
+
+'''
 # PK 2
 
 
@@ -58,3 +59,5 @@ class BANK(models.Model):
     name = models.CharField(max_length=10)
     IFSC = models.CharField(max_length=20)
     owner_id = models.ForeignKey(max_length=10, on_delete=CASCADE)
+
+'''
