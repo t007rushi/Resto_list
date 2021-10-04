@@ -1,0 +1,34 @@
+
+
+-----------------Resto Owner (MAIN TABLE)-------------------
+
+-----------Owner table
+Profile_pic
+
+  Name
+
+  E-mail ID
+
+  Phone Number
+
+  Address
+
+
+----------bank_detail table
+
+  Bank Account Number
+
+  Bank Name
+
+  Branch Name
+
+  IFSC Code
+
+-------------------------------------------------------------
+
+//render html file restaurant_owner_edit.html
+
+-----------SQL Script
+
+select * from owner_table as O join ban_detail B 
+on O.id = B.b_acc_id
